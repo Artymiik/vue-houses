@@ -1,0 +1,40 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: "Nunito Sans", Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+a {
+  font-weight: 400;
+  color: #d51c1c;
+  text-decoration: none;
+}
+a:hover {
+  color: #d51c1c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.5em;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: inherit;
+
+  background: #d61229 !important;
+  border-color: #d61229 !important;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover {
+  background: #ef4357 !important;
+  border-color: #ef4357 !important;
+  transition: 0.2s;
+}

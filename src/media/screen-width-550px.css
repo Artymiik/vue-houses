@@ -1,0 +1,35 @@
+@media only screen and (max-width: 600px) {
+  #page {
+    justify-content: center;
+  }
+  .filter-mobile {
+    display: flex;
+  }
+  .card-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .title__listing {
+    font-size: 24px;
+  }
+  .card__in__a {
+    max-width: 30rem;
+    min-height: 23rem;
+    margin-top: 1rem;
+  }
+  .img-card {
+    height: 250px;
+  }
+  .bottom {
+    padding-top: 0.5rem;
+  }
+  .title__card {
+    white-space: wrap;
+    overflow: auto;
+  }
+  .btn-show-index-nav {
+    bottom: 0;
+  }
+  .card {
+    min-width: 90vw;
+  }
+}

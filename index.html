@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- icon -->
+    <link rel="icon" href="/images/favicon/favicon.ico" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Все проекты домов</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      const hashProjects = localStorage.getItem("h_projects-1");
+
+      async function getProjects() {
+        let projects = await fetch("/api/api/architect/projects");
+
+        return projects.json();
+      }
+
+      if (!hashProjects) {
+        (async () => {
+          let projects = await getProjects();
+          localStorage.setItem("h_projects-1", JSON.stringify(projects));
+        })();
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+@media only screen and (max-width: 1300px) {
+  #filters {
+    position: fixed;
+    flex-direction: column;
+    display: none;
+    background: #fff;
+    width: 100vw;
+    height: 100%;
+    max-width: 100vw;
+    padding: 1.5rem;
+    margin-top: 0;
+    transform: translateX(800px);
+    overflow: auto;
+    z-index: 99;
+  }
+  .filter-mobile {
+    display: flex;
+  }
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .title__listing {
+    font-size: 20px;
+  }
+  .card__in__a {
+    max-width: 26rem;
+    min-height: 28rem;
+  }
+  .bottom {
+    padding-top: 2rem;
+  }
+  .img-card {
+    height: 250px;
+  }
+  .title__card {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+  .btn-filter-show {
+    display: flex;
+  }
+  #listing {
+    margin-left: 0;
+  }
+}
